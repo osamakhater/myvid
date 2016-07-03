@@ -1,6 +1,26 @@
-<p id="notice"><%= notice %></p>
 
-<h1>Listing Videos</h1>
+
+    <nav style="background-color : #26a69a;">
+    <div class="nav-wrapper">
+      <a href="home#!" class="brand-logo">MyVid</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+      <li><a href="pages/about#!">About</a></li>
+        <li><a href="pages/contact#!">Contact</a></li>
+        <li><a href="https://wistia.com/">Wistia</a></li>
+        
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+      </ul>
+    </div>
+  </nav>
+  <p id="notice"><%= notice %></p>
+
+<h1 style="text-align: center;">Videos</h1>
 
 <table>
   <thead>
@@ -27,5 +47,5 @@
 </table>
 
 <br>
+<div class="waves-effect blue-grey lighten-5 btn" style="color: white;"><%= link_to 'New Video', new_video_path %></div>
 
-<%= link_to 'New Video', new_video_path %>
