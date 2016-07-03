@@ -47,7 +47,6 @@ end
 
 
 group :development, :test do
-	gem 'pg'
 end
 
 group :production do
